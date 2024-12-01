@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Serviço</title>
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastrar Serviço</h2>
+        <form id="cadastroForm">
+            <!-- Campo Nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <!-- Campo Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Campo Senha -->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <!-- Campo Categoria -->
+            <label for="categoria">Categoria do Serviço:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione a categoria</option>
+                <option value="Construção">Construção</option>
+                <option value="Informática">Informática</option>
+                <option value="Beleza">Beleza</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Educação">Educação</option>
+                <option value="Outros">Outros</option>
+            </select>
+
+            <!-- Campo Descrição -->
+            <label for="descricao">Descrição do Serviço (até 200 caracteres):</label>
+            <textarea id="descricao" name="descricao" maxlength="200" required></textarea>
+            <p id="charCount">200 caracteres restantes</p>
+
+            <!-- Campo Valor -->
+            <label for="valor">Valor do Serviço:</label>
+            <div>
+                <input type="radio" id="aCombinar" name="valorOpcao" value="aCombinar" required>
+                <label for="aCombinar">A combinar</label>
+
+                <input type="radio" id="fixo" name="valorOpcao" value="fixo" required>
+                <label for="fixo">Valor Fixo</label>
+            </div>
+            <input type="number" id="valorFixo" name="valorFixo" placeholder="Digite o valor (se fixo)" disabled>
+
+            <!-- Botão Cadastrar -->
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p id="mensagem" style="display:none; color: green;">Cadastro realizado com sucesso!</p>
+    </div>
+
+    <script src="/js/cadastro.js"></script>
+</body>
+</html>

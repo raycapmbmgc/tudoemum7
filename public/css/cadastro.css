@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif; /* Fonte básica */
+    background-color: #0fba9e; /* Cor de fundo neutra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da janela */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.container {
+    margin-top: 400px;
+    background-color: #fce6b2; /* Fundo da caixa */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px; /* Largura máxima da caixa */
+    width: 100%; /* Largura 100% até o máximo definido */
+    overflow-y: auto; /* Permite rolagem vertical se necessário */
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* Cor do texto do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 24px; /* Tamanho do título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #555; /* Cor do texto das labels */
+    font-weight: bold; /* Deixa as labels em negrito */
+}
+
+input, select, textarea {
+    padding: 12px; /* Aumenta o padding */
+    margin-bottom: 20px; /* Espaço entre os campos */
+    border: 1px solid #ddd; /* Borda mais clara */
+    border-radius: 5px;
+    font-size: 14px; /* Tamanho da fonte */
+    transition: border-color 0.3s; /* Transição para bordas */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50; /* Muda a cor da borda ao focar */
+    outline: none; /* Remove contorno padrão */
+}
+
+textarea {
+    resize: none; /* Não permite redimensionar */
+    height: 80px; /* Altura fixa */
+}
+
+p {
+    font-size: 12px;
+    color: gray;
+}
+
+button {
+    padding: 12px;
+    background-color: #4CAF50; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Tamanho da fonte do botão */
+    transition: background-color 0.3s; /* Transição suave */
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+#charCount {
+    text-align: right; /* Alinha o contador à direita */
+    font-size: 12px;
+    color: #888; /* Cor mais clara para o contador */
+}
+
+/* Estilizando os inputs de rádio */
+input[type="radio"] {
+    margin: 0 5px; /* Espaço entre os botões de rádio */
+}
+
+/* Estilizando os labels dos inputs de rádio */
+label[for="aCombinar"], label[for="fixo"] {
+    display: inline-block; /* Exibição em linha */
+    margin-right: 20px; /* Espaço entre as opções */
+}

@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0fba9e;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0fba9e;
+}
+
+.logo img {
+    margin-top: 10px;
+    width: 40%;
+    height: auto; /* Mantém a proporção do logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-top: -8px;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.main-container {
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 20px;
+    background-color: #0fba9e;
+}
+
+.content {
+    border-radius: 5px;
+    margin: -1;
+    background-color: #3d3350;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 95%; /* Aumente a largura para 90% */
+    max-width: 1600px; /* Ajuste a largura máxima, se necessário */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-box {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-box h1 {
+    color: #fce6b2;
+    font-family: "Oswald", serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.text-box a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.image-box {
+    flex: 1;
+}
+
+.image-box img {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+/* Section for icons */
+.icons {
+    background-color: #fce6b2;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.icons h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Flexbox for icon images */
+.icons .mensagem,
+.icons .clientes {
+    display: inline-block;
+    margin: 40px;
+}
+
+.icons img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: -80px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box img {
+        width: 300px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons img {
+        margin-bottom: 20px;
+        width: 80%;
+        max-width: 250px;
+    }
+}
+
+.plano {
+    display: flex; /* Alinha a imagem e o texto na horizontal */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between; /* Cria espaço entre a imagem e o texto */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.plano img {
+    width: 40%; /* Ajuste a largura da imagem conforme necessário */
+    height: auto; /* Garante que a imagem mantenha a proporção */
+    object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+}
+
+.plano .text {
+    flex: 1; /* Faz com que o texto ocupe o espaço restante */
+    padding-left: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.plano h2 {
+    font-size: 2rem;
+    color: #1b1b1b;
+}
+
+.plano h3 {
+    font-size: 1.5rem;
+    color: #1b1b1b;
+    margin-top: 10px;
+}
+
+.plano h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0fba9e; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 12px 24px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin-top: 20px; /* Espaçamento acima do botão */
+    transition: background-color 0.3s ease; /* Efeito de transição de cor */
+}
+
+.btn:hover {
+    background-color: #0d9c89; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos gerais para o rodapé */
+footer {
+    background-color: #fce6b2; /* Cor de fundo escura para destacar */
+    color: rgb(116, 114, 114);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Ajuste o tamanho da logo */
+    height: auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links ul li {
+    margin: 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: rgb(73, 72, 72);
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #0fba9e; /* Cor de destaque ao passar o mouse */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #979191;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer-logo img {
+        max-width: 120px; /* Ajusta o tamanho da logo para telas menores */
+    }
+}
